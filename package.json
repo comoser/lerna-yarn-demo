@@ -7,6 +7,6 @@
   },
   "scripts": {
     "start": "yarn workspaces run start",
-    "release": "npx lerna version --conventional-commits --create-release github"
+    "release": "npx lerna version patch --conventional-commits --create-release github --yes"
   }
 }
