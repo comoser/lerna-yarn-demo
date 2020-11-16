@@ -4,5 +4,8 @@
   "workspaces": ["packages/*"],
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start": "yarn workspaces run start"
   }
 }

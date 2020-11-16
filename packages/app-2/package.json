@@ -11,7 +11,8 @@
     "url": "git+https://github.com/comoser/lerna-yarn-demo.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "node index.js &"
   },
   "bugs": {
     "url": "https://github.com/comoser/lerna-yarn-demo/issues"
