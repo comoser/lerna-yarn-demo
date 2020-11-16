@@ -1,0 +1,22 @@
+{
+  "name": "app-2",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "David Alecrim <d.alecrim@xgeeks.io>",
+  "homepage": "https://github.com/comoser/lerna-yarn-demo#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comoser/lerna-yarn-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/comoser/lerna-yarn-demo/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
