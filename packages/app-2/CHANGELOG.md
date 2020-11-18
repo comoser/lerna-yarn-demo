@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/comoser/lerna-yarn-demo/compare/app-2@1.0.2...app-2@1.0.3) (2020-11-18)
+
+
+### Features
+
+* **cool-feat:** add new route for feature hi ([ae2b86a](https://github.com/comoser/lerna-yarn-demo/commit/ae2b86ad4298875cc463319dcdf8e336533b37bb))
+
+
+
+
+
 ## [1.0.2](https://github.com/comoser/lerna-yarn-demo/compare/app-2@1.0.1...app-2@1.0.2) (2020-11-16)
 
 
