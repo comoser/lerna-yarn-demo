@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/comoser/lerna-yarn-demo/compare/app-2@1.0.3...app-2@1.0.4) (2021-02-01)
+
+
+### Features
+
+* **app-2:** new feature ([01b167b](https://github.com/comoser/lerna-yarn-demo/commit/01b167b84750b6b74c14efb19d2d58ee71b471ca))
+
+
+
+
+
 ## [1.0.3](https://github.com/comoser/lerna-yarn-demo/compare/app-2@1.0.2...app-2@1.0.3) (2020-11-18)
 
 
