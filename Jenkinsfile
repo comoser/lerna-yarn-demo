@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             when {
-                buildTags()
+                buildingTags()
             }
             steps {
                 echo 'Detected a tag'
