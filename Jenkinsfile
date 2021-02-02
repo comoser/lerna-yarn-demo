@@ -1,18 +1,13 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:14-alpine'
-        }
-    }
-    environment {
-        CI = 'true'
-    }
+    agent any
+    tools { nodejs 'node' }
     stages {
         stage('Deploy') {
             when {
                 buildingTag()
             }
             steps {
+                sh 'node -v'
                 sh 'node ./release.js'
             }
         }
