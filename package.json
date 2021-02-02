@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "yarn workspaces run start",
-    "release:patch": "export $(xargs < .env) && npx lerna version patch --conventional-commits --create-release github --yes",
+    "release:patch": "export $(xargs < .env) && npx lerna version patch --conventional-commits --create-release github --force-publish packages=app-1 --yes",
     "release:minor": "export $(xargs < .env) && npx lerna version minor --conventional-commits --create-release github --yes",
     "release:major": "export $(xargs < .env) && npx lerna version major --conventional-commits --create-release github --yes"
   }
