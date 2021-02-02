@@ -1,6 +1,11 @@
 pipeline {
     agent {
-        docker { image 'node:14-alpine' }
+        docker {
+            image 'node:14-alpine'
+        }
+    }
+    environment {
+        CI = 'true'
     }
     stages {
         stage('Deploy') {
@@ -8,13 +13,7 @@ pipeline {
                 buildingTag()
             }
             steps {
-                echo 'Detected a tag'
                 sh 'node ./release.js'
-                echo "${TAG_NAME}"
-                sh '''
-                echo $TAG_NAME
-                echo "${TAG_NAME}"
-                '''
             }
         }
     }
