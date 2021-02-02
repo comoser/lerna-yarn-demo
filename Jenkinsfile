@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'node:14-alpine' }
+    }
     stages {
         stage('Deploy') {
             when {
@@ -7,7 +9,7 @@ pipeline {
             }
             steps {
                 echo 'Detected a tag'
-                echo $TAG_NAME
+                sh 'node ./release.js'
                 echo "${TAG_NAME}"
                 sh '''
                 echo $TAG_NAME
