@@ -7,7 +7,6 @@ pipeline {
                 buildingTag()
             }
             steps {
-                sh 'node -v'
                 sh 'node ./release.js'
             }
         }

@@ -7,7 +7,10 @@
   },
   "scripts": {
     "start": "yarn workspaces run start",
-    "release:patch": "export $(xargs < .env) && npx lerna version patch --conventional-commits --create-release github --force-publish packages=app-1 --yes",
+    "release:dev:patch": "export $(xargs < .env) && npx lerna version prepatch --conventional-commits --yes",
+    "release:dev:minor": "export $(xargs < .env) && npx lerna version preminor --conventional-commits --yes",
+    "release:dev:major": "export $(xargs < .env) && npx lerna version premajor --conventional-commits --yes",
+    "release:patch": "export $(xargs < .env) && npx lerna version patch --conventional-commits --create-release github --yes",
     "release:minor": "export $(xargs < .env) && npx lerna version minor --conventional-commits --create-release github --yes",
     "release:major": "export $(xargs < .env) && npx lerna version major --conventional-commits --create-release github --yes"
   }
