@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.json('hi there from app-2! deploy it! now! again! app -2 changed');
+    res.json('hi there from app-2! Feat 2.');
 });
 
 app.get('/hi', (req, res) => {
