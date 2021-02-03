@@ -2,7 +2,7 @@ console.log('TAG NAME: ', process.env.TAG_NAME);
 
 const parts = process.env.TAG_NAME && process.env.TAG_NAME.split('@');
 
-console.log('Deploy to ENVIRONMENT: ', parts[0].includes('alpha') ? 'DEVELOPMENT' : 'PRODUCTION');
+console.log('Deploy to ENVIRONMENT: ', parts[1].includes('alpha') ? 'DEVELOPMENT' : 'PRODUCTION');
 console.log('App to deploy: ', parts && parts[0]);
 console.log('Version to deploy: ', parts && parts[1]);
 

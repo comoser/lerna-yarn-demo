@@ -7,9 +7,9 @@
   },
   "scripts": {
     "start": "yarn workspaces run start",
-    "release:dev:patch": "export $(xargs < .env) && npx lerna version prepatch --conventional-commits --yes",
-    "release:dev:minor": "export $(xargs < .env) && npx lerna version preminor --conventional-commits --yes",
-    "release:dev:major": "export $(xargs < .env) && npx lerna version premajor --conventional-commits --yes",
+    "release:dev:patch": "export $(xargs < .env) && npx lerna version prepatch --conventional-commits --conventional-prerelease --yes",
+    "release:dev:minor": "export $(xargs < .env) && npx lerna version preminor --conventional-commits --conventional-prerelease --yes",
+    "release:dev:major": "export $(xargs < .env) && npx lerna version premajor --conventional-commits --conventional-prerelease --yes",
     "release:patch": "export $(xargs < .env) && npx lerna version patch --conventional-commits --conventional-graduate --create-release github --yes",
     "release:minor": "export $(xargs < .env) && npx lerna version minor --conventional-commits --conventional-graduate --create-release github --yes",
     "release:major": "export $(xargs < .env) && npx lerna version major --conventional-commits --conventional-graduate --create-release github --yes"
