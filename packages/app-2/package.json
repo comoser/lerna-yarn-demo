@@ -1,6 +1,6 @@
 {
   "name": "app-2",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0",
   "description": "> TODO: description",
   "author": "David Alecrim <d.alecrim@xgeeks.io>",
   "homepage": "https://github.com/comoser/lerna-yarn-demo#readme",
