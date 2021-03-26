@@ -6,6 +6,7 @@ pipeline {
             when {
                 buildingTag()
             }
+
             steps {
                 sh 'node ./release.js'
             }
